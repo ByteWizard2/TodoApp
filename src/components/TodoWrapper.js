@@ -15,6 +15,7 @@ export const TodoWrapper = () =>{
 
     const toggleComplete= id =>{
         setTodos(todos.map(todo=>todo.id === id  ? {...todo, completed: !todo.completed}: todo))
+        console.log('ininin')
     }
 
     const deleteTodo = id =>{
